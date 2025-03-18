@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="icon" href="letterPs.jpg" type="image/jpg">
+    <style>
+         html {
+            height: 120%;
+            background-image: url("night.jpg");
+            background-size: cover;
+            background-attachment:fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            text-align: center;
+            background-color:rgba(4, 194, 219, 0.6);
+            padding: 2px 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.568);
+            padding: 0px 0;
+            top: 0;
+            left:0;
+            z-index: 1000;
+        }
+
+        .navdiv {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            color: orange;
+            font-size: 24px;
+            font-weight: bold;
+            padding-left: 40px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            margin-left: 30px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(5, 248, 248);
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        ul li a:hover {
+            color: orange;
+            background-color:rgba(0, 255, 255, 0.4);
+            padding: 2px;
+            border-radius: 5px;
+        }
+
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+        }
+
+        .main-content h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .main-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: rgb(0, 174, 255);
+            transform: .5;
+            transform: scale(1.2);
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;    
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Website</h1>
+    </header>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><h2><span style="color:rgb(8, 203, 252)">Port</span>folio</h2></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>Welcome to Our Portfolio</h1>
+        <p>Discover Our Information, and Hobbies</p>
+        <br><br>
+        <p>This website shocases our knowledge with html<br>We are still learning, and willing to learn more</p>
+        
+        <a href="about.html" class="button">Learn more about us</a>
+        <br>
+        <p>Clickable map image in contacts</p>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br>
+    <footer>
+        <p> &copy; Portfolio 2025, All rights reserved</p>
+      </footer>
+</body>
+</html>
