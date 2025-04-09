@@ -3,177 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>About Us</title>
     <link rel="icon" href="VR.PNG" type="image/PNG">
     <style>
-         body {
-            background-image: url(night.jpg);
+        body {
+            background-image: url('night.jpg');
             background-size: cover;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin: 0;
+            padding: 0;
         }
         header {
             text-align: center;
-            background-color:rgba(4, 194, 219, 0.6);
-            padding: 3px;
+            background-color: rgba(4, 194, 219, 0.6);
+            padding: 10px;
         }
         header h1 {
-            color:orange;
+            color: orange;
         }
-        main {
-            background:transparent;
-            display:flex;
-            flex-wrap:wrap;
-        }
-        main, section, aside {
-            padding:2px;
-            margin:20px;
-            border-radius: 5px;
+        nav {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
         }
         .navdiv {
-            display:flex;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
         }
-        .navbar {
-            background:rgba(0, 0, 0, 0.6);
-            padding:5px;
-            border-radius: 5px;
-            text-align: center;
-            font-family: Arial;
+        .logo h2 {
+            color: orange;
+            font-size: 24px;
         }
-        .menu ul {
-            float: left;
+        .menu {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 360px;
+        }
+        .menu ul {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
         }
         .menu li {
-            list-style:none;
-            margin-left: 50px;
-            margin-top:15px;
-            font-size:10px;
-            font-family:Arial, sans-serif;
+            margin-left: 20px;
         }
         .menu li a {
             text-decoration: none;
-            color:rgb(5, 248, 248);
-            margin-top:20px;
-            margin: 8px;
+            color: rgb(5, 248, 248);
             font-size: 17px;
-            border-radius: 10px;
-            padding: 5px;
             font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
             transition: 0.3s;
         }
         .menu li a:hover {
             color: orange;
-            transform: scale(1.3);
             background-color: rgba(0, 255, 255, 0.4);
-            padding: 2px;
-            border-radius: 5px;
+            transform: scale(1.2);
         }
-        .logo {
-            color:orange;
-            font-size: 20px;
-            margin-left: 50px;
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
         }
-        .menu {
-            float: left;
-            width: 400px;
-            height: 60px;
+        section, aside {
+            flex: 1;
+            background-color: rgba(0, 191, 255, 0.4);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
         }
-        .cat {
-            float:right;
-            border-radius: 30px;
+        section h2, aside h2 {
+            color: white;
+            text-align: center;
         }
-        section {
-            background-color:rgba(0, 191, 255, 0.4);
-            flex: 2;
-        }
-        section h2, h3, p {
-            color:white;
-            font-size: 20px;
-            text-align:center;
-        }
-        aside {
-            background-color:rgba(0, 191, 255, 0.4);
-            flex: 2;
-        }
-        aside h2, h3, p {
-            color:white;
-            font-size: 20px;
-            text-align:center;
+        section p, aside p {
+            color: white;
+            font-size: 16px;
+            text-align: center;
         }
         article {
-            color:aquamarine;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding-left: 20px;
-            padding-bottom: 20px;
-            letter-spacing:1.5px;
-            margin: 10px;
-            border-radius: 5px;
+            color: aquamarine;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 10px;
+            padding: 10px;
             background-color: rgba(255, 165, 0, 0.6);
+            border-radius: 10px;
         }
-        details {
-            color:aquamarine;
-        }
-        h2 {
-            font-weight:1000;
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            margin-top: 20px;
         }
         @media (max-width: 768px) {
             .navdiv {
                 flex-direction: column;
-                align-items: center;
-            }
-            .logo {
-                margin-left: 0;
-                text-align: center;
-            }
-            .menu {
-                float: none;
-                width: 100%;
-                height: auto;
-                margin: 0 auto;
+                align-items: flex-start;
             }
             .menu ul {
                 flex-direction: column;
-                margin-left: 0;
-                padding: 0;
+                width: 100%;
+                text-align: left;
             }
             .menu li {
                 margin: 10px 0;
             }
             main {
                 flex-direction: column;
-                margin: 10px;
                 padding: 10px;
             }
             section, aside {
-                flex: 1 1 100%;
-                margin: 10px 0;
-            }
-            .cat {
-                float: none;
-                display: block;
-                margin: 0 auto 10px auto;
-                width: 100px;
-                height: auto;
-            }
-            section h2, section h3, section p,
-            aside h2, aside h3, aside p {
-                font-size: 16px;
-                text-align: center;
-            }
-            article {
-                padding: 10px;
-                font-size: 14px;
-            }
-            iframe {
-                height: 200px;
-            }
-            header h1 {
-                font-size: 24px;
+                flex: none;
+                width: 100%;
             }
         }
     </style>
@@ -182,9 +129,11 @@
     <header>
         <h1>About Us</h1>
     </header>
-    <nav class="navbar">
+    <nav>
         <div class="navdiv">
-            <div class="logo"><h2><span style="color:cyan">Vision</span><span style="color:white">2</span>Reality</h2></div>
+            <div class="logo">
+                <h2><span style="color:cyan">Vision</span><span style="color:white">2</span>Reality</h2>
+            </div>
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -196,16 +145,14 @@
             </div>
         </div>
     </nav>
+
     <main>
         <section>
-            <div class="position">
-                <img class="cat" src="tiyanak.jpg" alt="his picture" width="130" height="100">
-                <h2 style="color:white;">John Carlo D. Ortega</h2>
-                <p>Bagumbayan St, Brgy Tinago Cebu City</p>
-            </div>
-            <br><br><br>
+            <h2>John Carlo D. Ortega</h2>
+            <img src="tiyanak.jpg" alt="John Carlo" width="130" height="100">
+            <p>Bagumbayan St, Brgy Tinago Cebu City</p>
             <article>
-                <p>I am a BSIT student, and I am still learning how to create a website using HTML and CSS. And also, I love to sing and listen to other kinds of songs.</p>
+                <p>I am a BSIT student, and I am still learning how to create a website using HTML and CSS. I also love to sing and listen to music.</p>
                 <h3>Skills &amp; Hobbies</h3>
                 <ul>
                     <li>Problem Solving</li>
@@ -215,11 +162,11 @@
                 <ul>
                     <li>Singing</li>
                     <li>Listening to Music</li>
-                    <li>Playing Online Game</li>
+                    <li>Playing Online Games</li>
                 </ul>
             </article>
             <article>
-                <h3>Here Are Some Of My Favorite Emojis</h3>
+                <h3>Favorite Emojis</h3>
                 <ul>
                     <li>&#128512; Grinning Face</li>
                     <li>&#128515; Grinning Face with Big Eyes</li>
@@ -227,39 +174,15 @@
                     <li>&#128536; Face With Symbol on Mouth</li>
                     <li>&#129303; Face with Head-Bandage</li>
                 </ul>
-                <ul>
-                    <li>less-than symbol: &lt;</li>
-                    <li>greater-than symbol: &gt;</li>
-                    <li>ampersand symbol: &amp;</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Education</h3>
-                <details><summary>View the schools</summary>
-                    <ul>
-                        <li>College - Cebu Eastern College, BSIT, 2024 - Present</li><br>
-                        <li>Senior High - Asian College of Technology, STEM, 2022 - 2024</li><br>
-                        <li>Junior High - Tejero National High School, 2018 - 2022</li><br>
-                        <li>Elementary - Tejero Elementary School, 2012 - 2018</li>
-                    </ul>
-                </details>
-                <br><br>
-                <h3>A youtube video of his fav moba game</h3>
-                <iframe width="100%" height="250" src="https://www.youtube.com/embed/X_7oCoxWnpU?si=J3kklTwcv0wQ7Vqp" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <br><br>
-                <h3>Map of their university location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5917811993827!2d123.89344197586534!3d10.294438167897386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742110947750!5m2!1sen!2sph" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </article>
         </section>
+
         <aside>
-            <div class="position">
-                <img class="cat" src="cat.jpg" alt="his picture" width="130" height="100">
-                <h2 style="color:white;">Mark lester L. Cristoria</h2>
-                <p>808 F.Villa Street Brgy T.Padilla Cebu City</p>
-            </div>
-            <br><br><br>
+            <h2>Mark Lester L. Cristoria</h2>
+            <img src="cat.jpg" alt="Mark Lester" width="130" height="100">
+            <p>808 F. Villa Street Brgy T. Padilla Cebu City</p>
             <article>
-                <p>I'm learning about HTML, and I still want to learn more about it so that I could make my imagination into reality</p>
+                <p>I’m learning about HTML and want to learn more so that I can bring my imagination to life.</p>
                 <h3>Skills &amp; Hobbies</h3>
                 <ul>
                     <li>Active listener</li>
@@ -273,38 +196,18 @@
                 </ul>
             </article>
             <article>
-                <h3>Here Are Some Of My Favorite Emojis</h3>
+                <h3>Favorite Emojis</h3>
                 <ul>
                     <li>&#129300; Thinking Face</li>
-                    <li>&#128060; Running man</li>
-                    <li>&#128054; Face of a dog</li>
-                    <li>&#128049; Face of a cat</li>
+                    <li>&#128060; Running Man</li>
+                    <li>&#128054; Face of a Dog</li>
+                    <li>&#128049; Face of a Cat</li>
                     <li>&#127848; Ice Cream</li>
                 </ul>
-                <ul>
-                    <li>double quotation mark: &quot;</li>
-                    <li>single quotation mark: &apos;</li>
-                    <li>non-breaking space: &nbsp;</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Education</h3>
-                <details><summary>View the schools</summary>
-                    <ul>
-                        <li>College - Cebu Eastern College, BSIT, 2024 - Present</li><br>
-                        <li>Senior High - Asian College of Technology, STEM, 2022 - 2024</li><br>
-                        <li>Junior High - Tejero National High School, 2018 - 2022</li><br>
-                    </ul>
-                </details>
-                <br><br>
-                <h3>An embedded youtube of his favorite sport</h3>
-                <iframe width="100%" height="250" src="https://www.youtube.com/embed/pwyacObMGj8?si=BXVTnL-y4qVVZUXQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <br><br>
-                <h3>Map of their university location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5917811993827!2d123.89344197586534!3d10.294438167897386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742110947750!5m2!1sen!2sph" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </article>
         </aside>
     </main>
+
     <footer>
         <p>&copy; Portfolio 2025, All rights reserved</p>
     </footer>
