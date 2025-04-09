@@ -199,6 +199,50 @@
         border-radius: 10px;
         padding: 10px;
        }
+
+       @media (max-width: 600px) {
+           .menu ul {
+               flex-direction: column;
+               margin-left: 0;
+               padding: 0;
+           }
+           .menu li {
+               margin: 10px 0;
+               font-size: 16px;
+           }
+           .navbar {
+               text-align: left;
+           }
+           .navdiv {
+               flex-direction: column;
+               align-items: flex-start;
+           }
+           .logo {
+               margin-left: 0;
+           }
+           main {
+               flex-direction: column;
+               margin-left: 0;
+           }
+           .document {
+               width: 100%;
+           }
+           .slide {
+               transform: translateX(-100%);
+               position: fixed;
+               top: 0;
+               left: 0;
+               height: 100%;
+               width: 250px;
+           }
+           .menu ul {
+               padding-left: 0;
+           }
+           .menu li a {
+               font-size: 15px;
+               padding: 15px;
+           }
+       }
     </style>
 </head>
 <body>
@@ -283,50 +327,28 @@
                         <img class="document" src="hr.PNG">
                     </p>
                 </li>
-                <li><span><</span>input<span>></span><strong> Creates an input field for forms.</strong>
+                <li><span><</span>meta<span>></span><strong> Provides metadata about the HTML document.</strong>
                     <p>
-                        <img class="document" src="input.PNG">
+                        <img class="document" src="meta.PNG">
                     </p>
                 </li>
             </ul>
-          </article>
-          <p>learn more about HTML at<a href="https://www.w3schools.com/"> w3school</a></p>       
+        </article>
+    </article> 
     </section>
+
     <aside>
-    <p><strong>Basic examples of HTML elements</strong>
-        <br>
-        Here are some of the most common HTML elements, along with examples:
-    </p>
-    <ol>
-        <li><span><</span>h1<span>></span> to<span><</span>h6<span>></span><strong> - Headings</strong>
-            <p>Headings are used to define titles and subtitles on the page. There are six levels of headings, <strong><span><</span>h1<span>></span></strong> being the most important and largest, while <strong><span><</span>h6<span>></span></strong> is the least important and smallest.</p>
-        </li>
-        <li><span><</span>p<span>></span><strong> - Paragraph</strong>
-            <p>The <span><</span>p<span>></span> tag is used to define a paragraph of text.</p>
-        </li>
-        <li><span><</span>a<span>></span><strong> - Anchor link</strong>
-            <p>The <span><</span>a<span>></span> tag is used to define hyperlinks, which allow users to navigate to other pages or websites.</p>
-        </li>
-        <li><span><</span>img<span>></span><strong> - Image</strong>
-            <p>The <span><</span>img<span>></span> element in HTML is used to embed images into a webpage.</p>
-        </li>
-        <li><span><</span>ul<span>></span> and <span><</span>ol<span>></span><strong> - Unordered and Ordered lists</strong>
-            Lists are used to group multiple items together.
-            <p>There are two types of list:</p>
-            <ul>
-                <li>Unordered list <span><</span>ul<span>></span>: Items are displayed with bullet points.</li>
-                <li>Ordered list <span><</span>ol<span>></span>: Items are displayed with numbers or letters.</li>
-            </ul>
-        </li>
-        <br>
-        <li><span><</span>div<span>></span><strong> - Divisions</strong>
-            <p>The <span><</span>div<span>></span> tag is a block-level element used to group and structure content. It is often used with CSS for layout purposes.</p>
-        </li>
-        <li><span><</span>span<span>></span><strong> - Inline Container</strong></li>
-        <li><span><</span>form<span>></span><strong> - Form</strong></li>
-        <li><span><</span>table<span>></span>,<span><</span>tr<span>></span>,<span><</span>td<span>></span>,<span><</span>th<span>></span><strong> - Tables</strong></li>
-    </ol>
-      </aside>
+        <h2>HTML ELEMENTS</h2>
+        <p>Common HTML elements:</p>
+        <ul>
+            <li>head</li>
+            <li>body</li>
+            <li>p (paragraph)</li>
+            <li>div (division)</li>
+            <li>h1, h2, h3 (headings)</li>
+            <li>a (anchor link)</li>
+        </ul>
+    </aside>
 </main>
 </body>
 </html>
