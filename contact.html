@@ -32,7 +32,7 @@
             padding: 20px;
             margin: 10px;
             border-radius: 10px;
-            width: 48%;
+            width: 48%; 
             box-sizing: border-box;
         }
         .navdiv {
@@ -70,8 +70,9 @@
             padding: 5px;
             font-weight: bold;
             transition: 0.3s;
+            
         }
-        .menu li a:hover {
+          .menu li a:hover {
             color: orange;
             transform: scale(1.3);
             background-color: rgba(0, 255, 255, 0.4);
@@ -112,43 +113,26 @@
             padding: 12px;
             width: 100%;
             bottom: 0;
+            
         }
         .image-container {
             width: 100%;
             height: 100%;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             border-radius: 50px 100px 50px 100px;
-            background-color: white;
+            background-color: white ;
         }
         image {
             border: 1px solid black;
             border-radius: 25px 50px 25px 50px;
+            
         }
-        h2 {
+        h2{
             font-weight: 1000;
-        }
-
-        @media screen and (max-width: 768px) {
-            .menu ul {
-                margin-left: 50px;
-            }
-            .menu li {
-                font-size: 14px;
-            }
-            .menu {
-                width: 100%;
-                text-align: center;
-                margin-top: 10px;
-            }
-            section, aside {
-                width: 100%;
-            }
-            .image-container {
-                width: 90%;
-                height: auto;
-            }
         }
     </style>
 </head>
@@ -198,13 +182,13 @@
         <div class="image-container">
             <img id="image" src="homeaboutcontact.jpg" usemap="#image-map" alt="picture of home, aboutus and contact">
             <map name="image-map">
-                <area target="_self" alt="portfolio" title="portfolio" href="index.html" coords="244,562,-26,-41" shape="rect">
-                <area target="_self" alt="portfolio" title="portfolio" href="about.html" coords="500,532,246,1" shape="0">
-                <area target="_self" alt="portfolio" title="portfolio" href="contact.html" coords="718,481,503,-86" shape="0">
-            </map>
-        </div>
+          <area target="_self" alt="portfolio" title="portfolio" href="index.html" coords="244,562,-26,-41" shape="rect">
+          <area target="_self" alt="portfolio" title="portfolio" href="about.html" coords="500,532,246,1" shape="0">
+          <area target="_self" alt="portfolio" title="portfolio" href="contact.html" coords="718,481,503,-86" shape="0">
+      </map>
+          </div>
     </main>
-    <br><br><br><br>
+<br><br><br><br>
     <footer>
         <p>&copy; Portfolio 2025, All rights reserved</p>
     </footer>

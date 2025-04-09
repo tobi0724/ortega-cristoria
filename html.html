@@ -15,43 +15,38 @@
         header {
             text-align: center;
             background-color: rgba(4, 194, 219, 0.6);
-            padding: 3px;
+            padding: 10px;
         }
         header h1 {
             color: orange;
         }
         .navdiv {
             display: flex;
-            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
         }
         .navbar {
             background: rgba(0, 0, 0, 0.6);
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
-            text-align: center;
-            font-family: Arial;
         }
         .menu ul {
-            float: left;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 360px;
+            margin-left: auto;
+            padding: 0;
         }
         .menu li {
             list-style: none;
-            margin-left: 50px;
-            margin-top: 15px;
-            font-size: 10px;
-            font-family: Arial, sans-serif;
+            margin: 0 15px;
+            font-size: 14px;
         }
         .menu li a {
             text-decoration: none;
             color: rgb(5, 248, 248);
-            margin-top: 20px;
-            margin: 25px;
             font-size: 17px;
-            border-radius: 10px;
             padding: 5px;
             font-weight: bold;
             transition: 0.3s;
@@ -63,15 +58,9 @@
             padding: 2px;
             border-radius: 5px;
         }
-        .logo {
+        .logo h2 {
             color: orange;
             font-size: 20px;
-            margin-left: 70px;
-        }
-        .menu {
-            float: left;
-            width: 400px;
-            height: 60px;
         }
         .slide {
             height: 100%;
@@ -83,10 +72,9 @@
             font-family: Arial, Helvetica, sans-serif; 
             transform: translateX(-130px);
         }
-        ul {
+        .slide ul {
             list-style-type: none;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding: 0;
         }
         .slide li a {
             text-decoration: none;
@@ -94,24 +82,11 @@
             font-weight: 600;
             padding: 30px 0;
             display: block;
-            transition: 0.2s ease-out;   
+            transition: 0.2s ease-out;
         }
         .slide li:hover a {
             color: white;
             background-color: aqua;
-        }
-        h2 {
-            font-weight: 1000;
-        }
-        .slide h2 {
-            text-align: right;
-            font-weight: 1000;
-            pointer-events: none;
-            padding: 10px 0;
-        }
-        input {
-            display: none;
-            visibility: hidden;
         }
         .toggle {
             position: absolute;
@@ -131,20 +106,26 @@
             border-radius: 25px;
             transition: 0.3s ease;
         }
+        .toggle .top_line, .toggle .middle_line, .toggle .bottom_line {
+            position: absolute;
+            width: 20px;
+            background-color: aqua;
+            border-radius: 25px;
+        }
         .toggle .top_line {
             top: 30%;
             left: 50%;
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%);
         }
         .toggle .middle_line {
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%);
         }
         .toggle .bottom_line {
             top: 70%;
             left: 50%;
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%);
         }
         input:checked ~ .toggle .top_line {
             left: 2px;
@@ -186,33 +167,6 @@
             padding: 10px;
         }
 
-        @media screen and (max-width: 768px) {
-            .menu ul {
-                margin-left: 0;
-                display: block;
-                text-align: center;
-            }
-            .menu li {
-                margin-left: 0;
-                margin-top: 15px;
-                font-size: 12px;
-            }
-            .navbar {
-                padding: 10px;
-            }
-            main {
-                margin-left: 0;
-                padding: 10px;
-                font-size: medium;
-            }
-            .slide {
-                width: 200px;
-                transform: translateX(-200px);
-            }
-            .logo {
-                font-size: 16px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -247,7 +201,7 @@
                 <li><a href="heading.html">Headings</a></li>
                 <li><a href="paragraph.html">Paragraphs</a></li>
                 <li><a href="attributes.html">Attributes</a></li>
-                <li><a href="styles.html">styles</a></li>
+                <li><a href="styles.html">Styles</a></li>
                 <li><a href="images.html">Images</a></li>
                 <li><a href="favicon.html">Favicon</a></li>
             </ul>
@@ -270,7 +224,7 @@
                         <li><strong><span><</span>!DOCTYPE html<span>></span>:</strong> This tells the browser to expect an HTML5 document.</li>
                         <li><strong><span><</span>html<span>></span>:</strong> This is the root element of the document.</li>
                         <li><strong><span><</span>head<span>></span>:</strong> Contains meta-information about the document (e.g., title, character set).</li>
-                        <li><strong><span><</span>Body<span>></span>:</strong> This is where the content of the webpage goes.</li>
+                        <li><strong><span><</span>body<span>></span>:</strong> This is where the content of the webpage goes.</li>
                     </ul>
                 </article>       
         </section>
