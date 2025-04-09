@@ -6,45 +6,40 @@
     <title>About us</title>
     <link rel="icon" href="VR.PNG" type="image/PNG">
     <style>
-         body{
+         body {
             background-image: url(night.jpg);
             background-size: cover;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin: 0;
         }
-        header{
+        header {
             text-align: center;
             background-color:rgba(4, 194, 219, 0.6);
             padding: 3px;
-            
         }
-        header h1{
+        header h1 {
             color:orange;
         }
-        main{
+        main {
             background:transparent;
             display:flex;
             flex-wrap:wrap;
         }
-        main, section, aside{
+        main, section, aside {
             padding:2px;
             margin:20px;
             border-radius: 5px;
         }
-
-       
-        .navdiv{
+        .navdiv {
             display:flex;
             text-align: center;
-           
         }
-        .navbar{
+        .navbar {
             background:rgba(0, 0, 0, 0.6);
             padding:5px;
             border-radius: 5px;
             text-align: center;
             font-family: Arial;
-
         }
         .menu ul {
             float: left;
@@ -53,16 +48,14 @@
             align-items: center;
             margin-left: 360px;
         }
-        .menu li{
+        .menu li {
             list-style:none;
             margin-left: 50px;
             margin-top:15px;
             font-size:10px;
             font-family:Arial, sans-serif;
-
         }
-        .menu li a{
-            
+        .menu li a {
             text-decoration: none;
             color:rgb(5, 248, 248);
             margin-top:20px;
@@ -71,9 +64,7 @@
             border-radius: 10px;
             padding: 5px;
             font-weight: bold;
-            transition: 0.3s ;
-            
-
+            transition: 0.3s;
         }
         .menu li a:hover {
             color: orange;
@@ -82,56 +73,39 @@
             padding: 2px;
             border-radius: 5px;
         }
-
-        .logo{
+        .logo {
             color:orange;
             font-size: 20px;
             margin-left: 50px;
         }
-        .menu{
+        .menu {
             float: left;
             width: 400px;
             height: 60px;
         }
-        .cat{
+        .cat {
             float:right;
             border-radius: 30px;
-            
-         
         }
-
         section {
-         
             background-color:rgba(0, 191, 255, 0.4);
             flex: 2;
-            
         }
-        section h2, h3, p{
+        section h2, h3, p {
             color:white;
             font-size: 20px;
             text-align:center;
-            
-            
-            
-            
-            
         }
         aside {
             background-color:rgba(0, 191, 255, 0.4);
             flex: 2;
-            
         }
-
-        aside h2, h3, p{
+        aside h2, h3, p {
             color:white;
             font-size: 20px;
             text-align:center;
-            
-            
-
         }
-
-        article{
+        article {
             color:aquamarine;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             padding-left: 20px;
@@ -144,8 +118,63 @@
         details {
             color:aquamarine;
         }
-        h2{
+        h2 {
             font-weight:1000;
+        }
+        @media (max-width: 768px) {
+            .navdiv {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo {
+                margin-left: 0;
+                text-align: center;
+            }
+            .menu {
+                float: none;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+            .menu ul {
+                flex-direction: column;
+                margin-left: 0;
+                padding: 0;
+            }
+            .menu li {
+                margin: 10px 0;
+            }
+            main {
+                flex-direction: column;
+                margin: 10px;
+                padding: 10px;
+            }
+            section, aside {
+                flex: 1 1 100%;
+                margin: 10px 0;
+            }
+            .cat {
+                float: none;
+                display: block;
+                margin: 0 auto 10px auto;
+                width: 100px;
+                height: auto;
+            }
+            section h2, section h3, section p,
+            aside h2, aside h3, aside p {
+                font-size: 16px;
+                text-align: center;
+            }
+            article {
+                padding: 10px;
+                font-size: 14px;
+            }
+            iframe {
+                height: 200px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
@@ -155,9 +184,7 @@
     </header>
     <nav class="navbar">
         <div class="navdiv">
-           
             <div class="logo"><h2><span style="color:cyan">Vision</span><span style="color:white">2</span>Reality</h2></div>
-
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -166,187 +193,120 @@
                     <li><a href="#">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </div>
         </div>
-    </div>
-        
     </nav>
     <main>
         <section>
             <div class="position">
-            <img class="cat" src="tiyanak.jpg
-            " alt="his picture" width="130"height="100" class="topright">
-             <h2 style="color:white;">John Carlo D. Ortega <span></span></h2>
-            <p>Bagumbayan St, Brgy Tinago Cebu City</p>
+                <img class="cat" src="tiyanak.jpg" alt="his picture" width="130" height="100">
+                <h2 style="color:white;">John Carlo D. Ortega</h2>
+                <p>Bagumbayan St, Brgy Tinago Cebu City</p>
             </div>
             <br><br><br>
             <article>
                 <p>I am a BSIT student, and I am still learning how to create a website using HTML and CSS. And also, I love to sing and listen to other kinds of songs.</p>
-               <h3>Skills &amp; Hobbies</h3>
-               <ul>
-                <li>Problem Solving</li>
-                <li>Fast learner</li>
-                <li>Critical thinker</li>
-               </ul>
-               <ul>
-                <li>Singing</li>
-                <li>Listening to Music</li>
-                <li>Playing Online Game</li>
-               </ul>
-
-            </article>
-           <article>
-            <h3>Here Are Some Of My Favorite Emojis</h3>
-            <ul>
-                <li>&#128512; Grinning Face</li>
-                <li>&#128515; Grinning Face with Big Eyes</li>
-                <li>&#128578; Slitely Smiling Face</li>
-                <li>&#128536; Face With Symbol on Mouth</li>
-                <li>&#129303; Face with Head-Bandage</li>
-     
-            </ul>
-            <ul>
-                <li>less-than symbol: &lt; </li>
-                <li>greater-than symbol: &gt; </li>
-                <li>ampersand symbol: &amp;</li>
-            </ul>
-
-           </article>
-    
-           <article>
-            <h3>Education</h3>
-            <details><summary>View the schools</summary>
+                <h3>Skills &amp; Hobbies</h3>
                 <ul>
-                    <li>College-
-                        
-                        Cebu Eastern College,
-                        Bachelor of Science in Information Technolgy
-
-                        2024 Present </li>
-                    <br>
-                    <li>Senior High School-
-
-                        Asian College of Technology
-                        Science, Technology, Engineering, and Mathematics
-                        Pantaleon del Rosario St, Cebu City, 6000 Cebu
-                        
-                        2022-2024</li>
-                        <br>
-                    <li>Junior High School-
-
-                        Tejero National High School
-                        M. J. Cuenco Ave, Cebu City, 6000 Cebu
-                        
-                        2018-2022</li>
-                        <br>
-                    <li>Elementary School-
-
-                        Tejero Elementary School
-                        M. J. Cuenco Ave, Cebu City, 6000 Cebu
-                        
-                        2012-18</li>
+                    <li>Problem Solving</li>
+                    <li>Fast learner</li>
+                    <li>Critical thinker</li>
                 </ul>
-            
-            </details>
-            <br><br>
-            <h3>A youtube video of his fav moba game</h3>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/X_7oCoxWnpU?si=J3kklTwcv0wQ7Vqp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <br><br>
-
-            <h3>Map of their university location</h3>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5917811993827!2d123.89344197586534!3d10.294438167897386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742110947750!5m2!1sen!2sph" width="100%%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            
-           </article>
-        
-        </section>
-
-        <aside>
-            <div class="position">
-                <img class="cat" src="cat.jpg
-                " alt="his picture" width="130"height="100" class="topright">
-                 <h2 style="color:white;">Mark lester L. Cristoria <span></span></h2>
-                <p>808 F.Villa Street Brgy T.Padilla Cebu City</p>
-                </div>
-                <br><br><br>
-                <article>
-                    <p>Im learning about html, and i still want to learn more about it so that i could make my imagination into reality </p>
-               <h3>Skills &amp; Hobbies</h3>
-               <ul>
-                <li>Active listener</li>
-                <li>Collaborative</li>
-                <li>Patience</li>
-               </ul>
-               <ul>
-                <li>Walking</li>
-                <li>Listening to Music</li>
-                <li>Playing Badminton</li>
-               </ul>
-    
-                </article>
-               <article>
+                <ul>
+                    <li>Singing</li>
+                    <li>Listening to Music</li>
+                    <li>Playing Online Game</li>
+                </ul>
+            </article>
+            <article>
                 <h3>Here Are Some Of My Favorite Emojis</h3>
                 <ul>
-                    <li>&#129300; ThinkingFace</li>
+                    <li>&#128512; Grinning Face</li>
+                    <li>&#128515; Grinning Face with Big Eyes</li>
+                    <li>&#128578; Slightly Smiling Face</li>
+                    <li>&#128536; Face With Symbol on Mouth</li>
+                    <li>&#129303; Face with Head-Bandage</li>
+                </ul>
+                <ul>
+                    <li>less-than symbol: &lt;</li>
+                    <li>greater-than symbol: &gt;</li>
+                    <li>ampersand symbol: &amp;</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Education</h3>
+                <details><summary>View the schools</summary>
+                    <ul>
+                        <li>College - Cebu Eastern College, BSIT, 2024 - Present</li><br>
+                        <li>Senior High - Asian College of Technology, STEM, 2022 - 2024</li><br>
+                        <li>Junior High - Tejero National High School, 2018 - 2022</li><br>
+                        <li>Elementary - Tejero Elementary School, 2012 - 2018</li>
+                    </ul>
+                </details>
+                <br><br>
+                <h3>A youtube video of his fav moba game</h3>
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/X_7oCoxWnpU?si=J3kklTwcv0wQ7Vqp" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                <br><br>
+                <h3>Map of their university location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5917811993827!2d123.89344197586534!3d10.294438167897386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742110947750!5m2!1sen!2sph" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+        </section>
+        <aside>
+            <div class="position">
+                <img class="cat" src="cat.jpg" alt="his picture" width="130" height="100">
+                <h2 style="color:white;">Mark lester L. Cristoria</h2>
+                <p>808 F.Villa Street Brgy T.Padilla Cebu City</p>
+            </div>
+            <br><br><br>
+            <article>
+                <p>I'm learning about HTML, and I still want to learn more about it so that I could make my imagination into reality</p>
+                <h3>Skills &amp; Hobbies</h3>
+                <ul>
+                    <li>Active listener</li>
+                    <li>Collaborative</li>
+                    <li>Patience</li>
+                </ul>
+                <ul>
+                    <li>Walking</li>
+                    <li>Listening to Music</li>
+                    <li>Playing Badminton</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Here Are Some Of My Favorite Emojis</h3>
+                <ul>
+                    <li>&#129300; Thinking Face</li>
                     <li>&#128060; Running man</li>
                     <li>&#128054; Face of a dog</li>
                     <li>&#128049; Face of a cat</li>
-                    <li>&#127848; IceCream</li>
-         
+                    <li>&#127848; Ice Cream</li>
                 </ul>
                 <ul>
                     <li>double quotation mark: &quot;</li>
                     <li>single quotation mark: &apos;</li>
                     <li>non-breaking space: &nbsp;</li>
                 </ul>
-    
-               </article>
-        
-               <article>
+            </article>
+            <article>
                 <h3>Education</h3>
                 <details><summary>View the schools</summary>
                     <ul>
-                        <li>College-
-                            
-                            Cebu Eastern College,
-                            Bachelor of Science in Information Technolgy
-    
-                            2024 Present </li>
-                        <br>
-                        <li>Senior High School-
-    
-                            Asian College of Technology
-                            Science, Technology, Engineering, and Mathematics
-                            Pantaleon del Rosario St, Cebu City, 6000 Cebu
-                            
-                            2022-2024</li>
-                            <br>
-                        <li>Junior High School-
-    
-                            Tejero National High School
-                            M. J. Cuenco Ave, Cebu City, 6000 Cebu
-                            
-                            2018-2022</li>
-                            <br>
+                        <li>College - Cebu Eastern College, BSIT, 2024 - Present</li><br>
+                        <li>Senior High - Asian College of Technology, STEM, 2022 - 2024</li><br>
+                        <li>Junior High - Tejero National High School, 2018 - 2022</li><br>
                     </ul>
-                </details>   
+                </details>
                 <br><br>
                 <h3>An embedded youtube of his favorite sport</h3>
-                <iframe width="100%" height="250" src="https://www.youtube.com/embed/pwyacObMGj8?si=BXVTnL-y4qVVZUXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/pwyacObMGj8?si=BXVTnL-y4qVVZUXQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                 <br><br>
-    
                 <h3>Map of their university location</h3>
-    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5917811993827!2d123.89344197586534!3d10.294438167897386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742110947750!5m2!1sen!2sph" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-                
-               </article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5917811993827!2d123.89344197586534!3d10.294438167897386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742110947750!5m2!1sen!2sph" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
         </aside>
-
-
     </main>
     <footer>
-        <p> &copy; Portfolio 2025, All rights reserved</p>
-      </footer>
+        <p>&copy; Portfolio 2025, All rights reserved</p>
+    </footer>
 </body>
 </html>
